@@ -1,7 +1,9 @@
+import LeafletMap from "./LeafletMap"
+
 export default () => {
     return (
-        <div>
-            right side panel
+        <div className="w-2/3 overflow-hidden relative 2xl:h-screen">
+            <LeafletMap />
         </div>
     )
 }
