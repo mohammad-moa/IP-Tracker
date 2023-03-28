@@ -11,7 +11,7 @@ export default ({ position, iconUrl, iconSize, zoom }) => {
 
     return (
         <>
-            <MapContainer className="w-full h-[87em] z-0 2xl:h-screen" center={position} zoom={zoom} scrollWheelZoom={false}>
+            <MapContainer className="w-full h-full z-0 2xl:h-screen" center={position} zoom={zoom} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
