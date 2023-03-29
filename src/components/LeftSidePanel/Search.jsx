@@ -21,6 +21,11 @@ export default () => {
         }
     }, [debounceSearch])
 
+    const getMyIPHandler = () => {
+        setResult("")
+        setSearchValue("")
+    }
+
     return (
         <div className="flex justify-between items-center py-5 px-5 bg-[#F2F2F2] rounded-[20px]">
             <div className="flex w-5/6">
@@ -38,7 +43,12 @@ export default () => {
                 />
             </div>
 
-            <button className="text-primary-dark-color text-[15px] font-semibold font-manrope"> My IP </button>
+            <button
+                className="text-primary-dark-color text-[15px] font-semibold font-manrope"
+                onClick={getMyIPHandler}
+            >
+                My IP
+            </button>
         </div>
     )
 }
