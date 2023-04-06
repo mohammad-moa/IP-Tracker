@@ -14,7 +14,9 @@ export default () => {
     const toggleSidePanelHandler = () => setIsToggleSidePanel(!isToggleSidePanel)
 
     return (
-        <div className={`${isToggleSidePanel ? "w-[2%] p-7 transition-all" : "xl:w-1/3 md:w-1/2 p-10"} relative bg-white z-10  2xl:h-screen xl:h-[65em] md:h-screen`}>
+        <div
+            className={`${isToggleSidePanel ? "w-[2%] p-7 transition-all" : "xl:w-1/3 md:w-1/2 p-10"} relative bg-white z-10 2xl:h-screen xl:h-[65em] md:h-screen max-md:left-side-mobile-screen`}
+        >
             <div className={`${isToggleSidePanel ? "hidden" : "block"}`}>
                 <Search />
                 <InfoIP />
@@ -22,7 +24,7 @@ export default () => {
             </div>
 
             <div
-                className="bg-white p-3 shadow-gray-light-shadow rounded-xl absolute right-0 bottom-[50px] translate-x-1/2 2xl:bottom-[90px]"
+                className="bg-white p-3 shadow-gray-light-shadow rounded-xl absolute right-0 bottom-[50px] translate-x-1/2 2xl:bottom-[90px] max-md:hidden"
                 role="button"
                 onClick={toggleSidePanelHandler}
             >
