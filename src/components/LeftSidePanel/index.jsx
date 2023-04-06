@@ -14,7 +14,7 @@ export default () => {
     const toggleSidePanelHandler = () => setIsToggleSidePanel(!isToggleSidePanel)
 
     return (
-        <div className={`${isToggleSidePanel ? "w-[2%] p-7 transition-all" : "w-1/3 p-10"} h-[65em] relative bg-white z-10 2xl:h-screen`}>
+        <div className={`${isToggleSidePanel ? "w-[2%] p-7 transition-all" : "xl:w-1/3 md:w-1/2 p-10"} relative bg-white z-10  2xl:h-screen xl:h-[65em] md:h-screen`}>
             <div className={`${isToggleSidePanel ? "hidden" : "block"}`}>
                 <Search />
                 <InfoIP />
